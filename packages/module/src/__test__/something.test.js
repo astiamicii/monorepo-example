@@ -1,3 +1,6 @@
+// bla bla
+// bla
+
 const { log, log2 } = require('../index');
 
 test('log test', () => {

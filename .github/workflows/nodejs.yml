@@ -43,7 +43,7 @@ jobs:
   #         # The root folder of the project that originally ran the tests
   #         base-path: ./packages/module # optional
   finish:
-    needs: test
+    # needs: test
     runs-on: ubuntu-latest
     defaults:
       run:

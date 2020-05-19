@@ -47,7 +47,7 @@ jobs:
       - name: Coveralls Finished
         uses: coverallsapp/github-action@v1.1.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.token }}
           path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
           base-path: ./packages/module # optional
           parallel-finished: true

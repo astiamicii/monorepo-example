@@ -45,7 +45,12 @@ jobs:
   finish:
     needs: test
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/docs
     steps:
+      - run: npm install
+      - run: npm test
       - name: Coveralls Finished
         uses: coverallsapp/github-action@v1.1.1
         env:

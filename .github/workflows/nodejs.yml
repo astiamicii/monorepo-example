@@ -29,6 +29,8 @@ jobs:
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v1.1.1
+        env:
+          NODE_COVERALLS_DEBUG: 1
         with:
           #
           github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,6 +1,6 @@
 {
   "name": "@astiamicii/monorepo-example",
-  "description": "module is used to play with the npm publish process using lerna and travis ci.",
+  "description": "monorepo-module example is used to play with the npm publish process using lerna and travis ci.",
   "version": "1.13.1",
   "main": "index.js",
   "license": "MIT",

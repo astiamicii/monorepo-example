@@ -1,4 +1,4 @@
-const { log, log2 } = require('./index');
+const { log, log2 } = require('../index');
 
 test('log test', () => {
   expect(log()).toBe('some meaningful message!');

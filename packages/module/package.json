@@ -11,7 +11,7 @@
   },
   "homepage": "https://github.com/astiamicii/monorepo-example/module/#readme",
   "scripts": {
-    "test": " jest --coverage"
+    "test": " jest --verbose --coverage"
   },
   "publishConfig": {
     "access": "public"

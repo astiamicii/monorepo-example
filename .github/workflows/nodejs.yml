@@ -31,7 +31,7 @@ jobs:
         uses: coverallsapp/github-action@v1.1.1
         with:
           #
-          github-token: ${{ github.token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           # Path to lcov file
           path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
           # Set to true if you are running parallel jobs, then use "parallel_finished: true" for the last action.
@@ -47,7 +47,7 @@ jobs:
       - name: Coveralls Finished
         uses: coverallsapp/github-action@v1.1.1
         with:
-          github-token: ${{ github.token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
           base-path: ./packages/module # optional
           parallel-finished: true

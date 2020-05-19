@@ -23,10 +23,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install
-        - run: npm ci
-      - name: test
-        - run: npm test
+      - run: npm ci
+      - run: npm test
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v1.1.1
@@ -49,4 +47,6 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
+          base-path: ./packages/module # optional
           parallel-finished: true

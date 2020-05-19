@@ -17,7 +17,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "coveralls": "^3.1.0",
     "jest": "^25.5.4"
   }
 }

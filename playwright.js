@@ -3,7 +3,9 @@ const playwright = require('playwright');
 (async () => {
   // Try to add 'firefox' to the list ↓
   for (const browserType of ['chromium', 'webkit', 'firefox']) {
-    const browser = await playwright[browserType].launch();
+    const browser = await playwright[browserType].launch({
+      headless: false,
+    });
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://lola-tech.github.io/graphql-kimera/');

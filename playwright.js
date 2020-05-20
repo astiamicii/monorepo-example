@@ -9,5 +9,6 @@ const playwright = require('playwright');
     await page.goto('https://lola-tech.github.io/graphql-kimera/');
     await page.screenshot({ path: `playwright/example-${browserType}.png` });
     await browser.close();
+    console.log(`ran for ${browserType}`);
   }
 })();

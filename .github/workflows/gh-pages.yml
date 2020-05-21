@@ -24,12 +24,12 @@ jobs:
         with:
           node-version: '12.x'
 
-      - run: npm ci
-      - run: npm run build
-      - run: npm test
-
       - name: Cypress run
         uses: cypress-io/github-action@v1
+        with:
+          build: npm run build
+          start: npm start
+          wait-on: http://localhost:3030
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

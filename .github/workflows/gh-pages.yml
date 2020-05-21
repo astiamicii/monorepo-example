@@ -24,17 +24,17 @@ jobs:
         with:
           node-version: '12.x'
 
-      - run: npm ci
-      - run: npm run build
+      # - run: npm ci
+      # - run: npm run build
 
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
-          start: npm start
-          wait-on: 'http://localhost:3030'
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/docs/build
+          command:
+            start: npm start
+            wait-on: 'http://localhost:3000'
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./packages/docs/build

@@ -30,7 +30,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
-          start: npm start:prod
+          start: npm run start:prod
           wait-on: 'http://localhost:3030'
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3

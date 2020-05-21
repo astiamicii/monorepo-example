@@ -31,7 +31,7 @@ jobs:
         uses: cypress-io/github-action@v1
         with:
           start: npm start
-          wait-on: 'http://localhost:3000'
+          wait-on: 'http://localhost:3030'
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
       #   with:

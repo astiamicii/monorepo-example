@@ -9,7 +9,7 @@
     "url": "https://github.com/astiamicii/monorepo-example.git",
     "directory": "packages/module"
   },
-  "homepage": "https://github.com/astiamicii/monorepo-example/module/#readme",
+  "homepage": "https://astiamicii.github.io/monorepo-example/",
   "scripts": {
     "test": " jest --verbose --collectCoverage"
   },

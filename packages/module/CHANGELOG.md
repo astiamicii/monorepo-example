@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.13.2...@astiamicii/monorepo-example@1.14.0) (2020-05-25)
+
+
+### Bug Fixes
+
+* bla ([726ad43](https://github.com/astiamicii/monorepo-example/commit/726ad4394a2a09eea33e981d53283d725ae107de))
+* le pix ([84ae990](https://github.com/astiamicii/monorepo-example/commit/84ae990b18a43fae72df038d6724accd6cc90193))
+
+
+### Features
+
+* coverage ([9b0627e](https://github.com/astiamicii/monorepo-example/commit/9b0627e16aa3ca1f8a0eb24742650629260f483a))
+* mizerii ([e670b67](https://github.com/astiamicii/monorepo-example/commit/e670b6793c784000209d5b6053e98ffda9ac65cb))
+
+
+
+
+
 ## [1.13.2](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.13.1...@astiamicii/monorepo-example@1.13.2) (2020-05-19)
 
 **Note:** Version bump only for package @astiamicii/monorepo-example

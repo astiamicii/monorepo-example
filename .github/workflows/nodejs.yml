@@ -27,21 +27,7 @@ jobs:
       - run: npm install
       - run: npm test
 
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v1.1.1
-        env:
-          NODE_COVERALLS_DEBUG: 1
-        with:
-          #
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          # Path to lcov file
-          path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
-          # Set to true if you are running parallel jobs, then use "parallel_finished: true" for the last action.
-          parallel: true # optional
-          # Set to true for the last action when using "parallel: true".
-          # parallel-finished: # optional
-          # The root folder of the project that originally ran the tests
-          base-path: ./packages/module # optional
+
   automerge:
     name: Merge dependabot pull requests
     runs-on: [ubuntu-latest]
@@ -58,6 +44,23 @@ jobs:
               pull_number: context.payload.pull_request.number
             })
           github-token: ${{github.token}}
+          
+          
+#                 - name: Coveralls GitHub Action
+#         uses: coverallsapp/github-action@v1.1.1
+#         env:
+#           NODE_COVERALLS_DEBUG: 1
+#         with:
+#           #
+#           github-token: ${{ secrets.GITHUB_TOKEN }}
+#           # Path to lcov file
+#           path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
+#           # Set to true if you are running parallel jobs, then use "parallel_finished: true" for the last action.
+#           parallel: true # optional
+#           # Set to true for the last action when using "parallel: true".
+#           # parallel-finished: # optional
+#           # The root folder of the project that originally ran the tests
+#           base-path: ./packages/module # optional
 #   finish:
 #     needs: test
 #     runs-on: ubuntu-latest

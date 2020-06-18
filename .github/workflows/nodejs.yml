@@ -46,7 +46,7 @@ jobs:
     name: Merge dependabot pull requests
     runs-on: [ubuntu-latest]
     needs: test
-    if: github.base_ref = 'master' && github.actor == 'dependabot[bot]'
+    if: github.base_ref == 'master' && github.actor == 'dependabot[bot]'
     steps:
       - name: Merge
         uses: actions/github-script@v2.0.0
@@ -58,30 +58,30 @@ jobs:
               pull_number: context.payload.pull_request.number
             })
           github-token: ${{github.token}}
-  finish:
-    needs: test
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/module
-    steps:
-      - uses: actions/checkout@v2
+#   finish:
+#     needs: test
+#     runs-on: ubuntu-latest
+#     defaults:
+#       run:
+#         working-directory: packages/module
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-      - run: npm install
-      - run: npm test
-      - name: Coveralls Finished
-        uses: coverallsapp/github-action@v1.1.1
-        env:
-          NODE_COVERALLS_DEBUG: 1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
-          base-path: ./packages/module # optional
-          parallel-finished: true
+#       - name: Setup Node
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '12.x'
+#       - run: npm install
+#       - run: npm test
+#       - name: Coveralls Finished
+#         uses: coverallsapp/github-action@v1.1.1
+#         env:
+#           NODE_COVERALLS_DEBUG: 1
+#         with:
+#           github-token: ${{ secrets.GITHUB_TOKEN }}
+#           path-to-lcov: ./packages/module/coverage/lcov.info # default is ./coverage/lcov.info
+#           base-path: ./packages/module # optional
+#           parallel-finished: true
           
           
         #   e2e-tests:

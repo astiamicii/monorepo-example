@@ -11,7 +11,7 @@
   },
   "homepage": "https://astiamicii.github.io/monorepo-example/",
   "scripts": {
-    "test": " jest --verbose --collectCoverage"
+    "test": " jest --verbose --collectCoverage && codecov"
   },
   "publishConfig": {
     "access": "public"

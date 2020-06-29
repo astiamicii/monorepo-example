@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.14.1...@astiamicii/monorepo-example@2.0.0) (2020-06-29)
+
+
+### Features
+
+* new log ([77e2d0a](https://github.com/astiamicii/monorepo-example/commit/77e2d0ade3b86dfdc755574f32a6e84d676f75ee))
+
+
+
+
+
 ## [1.14.1](https://github.com/astiamicii/monorepo-example/compare/@astiamicii/monorepo-example@1.14.0...@astiamicii/monorepo-example@1.14.1) (2020-06-29)
 
 **Note:** Version bump only for package @astiamicii/monorepo-example

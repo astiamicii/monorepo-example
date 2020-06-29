@@ -15,10 +15,15 @@ const log5 = () => {
   console.log('some meaningful messssssa333ge33?!..!!45www693@#!');
 };
 
+const log6 = () => {
+  console.log('some meaningful messssssa333ge33?!..!!45www693@#!');
+};
+
 module.exports = {
   log,
   log2,
   log3,
   log4,
   log5,
+  log6,
 };

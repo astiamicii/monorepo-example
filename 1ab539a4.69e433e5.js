@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{141:function(o){o.exports=JSON.parse('{"allTagsPath":"/monorepo-example/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/monorepo-example/blog/tags/hello"}')}}]);

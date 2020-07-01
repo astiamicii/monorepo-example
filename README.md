@@ -6,6 +6,8 @@ Travis [![Build Status](https://travis-ci.org/astiamicii/monorepo-example.svg?br
 
 [![Coverage Status](https://coveralls.io/repos/github/astiamicii/monorepo-example/badge.svg)](https://coveralls.io/github/astiamicii/monorepo-example)
 
+[![codecov](https://codecov.io/gh/astiamicii/monorepo-example/branch/master/graph/badge.svg)](https://codecov.io/gh/astiamicii/monorepo-example)
+
 **Disclaimer / Warning:**
 
 This is only used to play with the npm publish process using lerna and travis ci.

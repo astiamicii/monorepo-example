@@ -33,7 +33,7 @@ jobs:
       #     start: npm run cy:start
       #     wait-on: 'http://localhost:3030'
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./packages/docs/build

@@ -40,7 +40,7 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
+    "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^8.3.4",
     "babel-eslint": "^10.1.0",
     "docusaurus": "2.0.0-alpha.58",
